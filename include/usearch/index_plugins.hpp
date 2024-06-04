@@ -21,10 +21,6 @@
 #include <omp.h> // `omp_get_num_threads()`
 #endif
 
-#if defined(USEARCH_DEFINED_LINUX)
-#include <sys/auxv.h> // `getauxval()`
-#endif
-
 #if !defined(USEARCH_USE_FP16LIB)
 #if defined(__AVX512F__)
 #define USEARCH_USE_FP16LIB 0
